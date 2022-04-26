@@ -1,31 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import { AntDesign } from "@expo/vector-icons";
+import { useTheme } from "@react-navigation/native";
+import axios from "axios";
+import * as Haptics from "expo-haptics";
+import LottieView from "lottie-react-native";
+import React, { useEffect, useState } from "react";
 import {
-  View, TextInput, Alert, StyleSheet, Pressable, Keyboard,
-} from 'react-native';
+  Alert,
+  Keyboard,
+  Pressable,
+  StyleSheet,
+  TextInput,
+  View,
+} from "react-native";
 import Animated, {
-  interpolate, Extrapolate, withTiming, useSharedValue, useAnimatedScrollHandler, useAnimatedStyle,
-} from 'react-native-reanimated';
-import { SharedElement } from 'react-navigation-shared-element';
-import { useTheme } from '@react-navigation/native';
-import { AntDesign } from '@expo/vector-icons';
-import LottieView from 'lottie-react-native';
-import * as Haptics from 'expo-haptics';
-import axios from 'axios';
+  Extrapolate,
+  interpolate,
+  useAnimatedScrollHandler,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from "react-native-reanimated";
+import { SharedElement } from "react-navigation-shared-element";
+import { useBooksState } from "../BookStore";
+import Book from "../components/SearchBook";
+import { setModal } from "../components/StatusModal";
+import Text from "../components/Text";
 
-import Text from '../components/Text';
-import Book from '../components/SearchBook';
-import { useBooksState } from '../BookStore';
-import { setModal } from '../components/StatusModal';
-
-const stack = require('../anims/stack.json');
+const stack = require("../anims/stack.json");
 
 // Default screen
 function BookSearchScreen({ navigation }) {
-  const {
-    colors, height, margin, status, navbar,
-  } = useTheme();
+  const { colors, height, margin, status, navbar } = useTheme();
   const { books: bookList } = useBooksState();
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const [books, setBooks] = useState([]);
   const scrollY = useSharedValue(0);
   const loaded = useSharedValue(0);
@@ -51,7 +58,7 @@ function BookSearchScreen({ navigation }) {
   // hide on current screen
   const bookDetails = (book) => {
     Haptics.selectionAsync();
-    navigation.push('BookDetails', { book });
+    navigation.push("BookDetails", { book });
   };
 
   // edit selected book
@@ -64,16 +71,19 @@ function BookSearchScreen({ navigation }) {
   // search query
   useEffect(() => {
     if (query.length > 0) {
-      axios.get(`https://www.goodreads.com/book/auto_complete?format=json&q=${query}`)
+      axios
+        .get(
+          `https://www.goodreads.com/book/auto_complete?format=json&q=${query}`,
+        )
         .then((resp) => {
           const bks = resp.data.map((book) => ({
             ...book,
-            imageUrl: book.imageUrl.replace(/_..../, '_SY475_'),
+            imageUrl: book.imageUrl.replace(/_..../, "_SY475_"),
           }));
           setBooks(bks);
         })
         .catch((error) => {
-          Alert.alert('Failed to get books', error);
+          Alert.alert("Failed to get books", error);
         });
     }
   }, [query]);
@@ -83,19 +93,31 @@ function BookSearchScreen({ navigation }) {
     search: useAnimatedStyle(() => ({
       zIndex: 10,
       height: navbar,
-      alignItems: 'flex-end',
-      flexDirection: 'row',
+      alignItems: "flex-end",
+      flexDirection: "row",
       paddingTop: status,
       paddingBottom: 6,
       paddingHorizontal: margin / 2,
-      justifyContent: 'space-between',
+      justifyContent: "space-between",
       backgroundColor: colors.background,
-      shadowOpacity: interpolate(scrollY.value, [0, 20], [0, 0.75], Extrapolate.CLAMP),
+      shadowOpacity: interpolate(
+        scrollY.value,
+        [0, 20],
+        [0, 0.75],
+        Extrapolate.CLAMP,
+      ),
     })),
     scrollView: useAnimatedStyle(() => ({
       opacity: interpolate(loaded.value, [0, 1], [0, 1], Extrapolate.CLAMP),
       transform: [
-        { translateY: interpolate(loaded.value, [0, 1], [50, 0], Extrapolate.CLAMP) },
+        {
+          translateY: interpolate(
+            loaded.value,
+            [0, 1],
+            [50, 0],
+            Extrapolate.CLAMP,
+          ),
+        },
       ],
     })),
   };
@@ -122,25 +144,26 @@ function BookSearchScreen({ navigation }) {
       color: colors.text,
       paddingHorizontal: margin,
       backgroundColor: colors.card,
-      flexDirection: 'row',
-      alignItems: 'center',
+      flexDirection: "row",
+      alignItems: "center",
     },
     textInput: {
       height: 38,
-      width: '100%',
+      width: "100%",
       fontSize: 16,
+      color: colors.text,
     },
     saveButton: {
       width: 60,
       height: 38,
       lineHeight: 38,
-      textAlign: 'right',
-      color: '#888888',
+      textAlign: "right",
+      color: colors.text,
     },
     placeholderBox: {
-      alignItems: 'center',
+      alignItems: "center",
       marginTop: margin * 2,
-      justifyContent: 'center',
+      justifyContent: "center",
     },
     placeholderImg: {
       opacity: 0.95,
@@ -193,7 +216,9 @@ function BookSearchScreen({ navigation }) {
           </View>
         </SharedElement>
         <Pressable onPress={goBack}>
-          <Text bold style={styles.saveButton}>Done</Text>
+          <Text bold style={styles.saveButton}>
+            Done
+          </Text>
         </Pressable>
       </Animated.View>
 

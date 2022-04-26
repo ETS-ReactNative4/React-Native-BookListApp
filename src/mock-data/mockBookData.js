@@ -217,7 +217,7 @@ export const mockBookList = [
   {
     bookId: 12,
     bookTitleBare: "Hell Of A Book",
-    status: "Wishlist",
+    status: "Favorite",
     avgRating: 5,
     numPages: 250,
     imageUrl:
@@ -236,7 +236,7 @@ export const mockBookList = [
   {
     bookId: 13,
     bookTitleBare: "Hell Of A Book",
-    status: "Wishlist",
+    status: "Favorite",
     avgRating: 5,
     numPages: 250,
     imageUrl:
@@ -255,7 +255,7 @@ export const mockBookList = [
   {
     bookId: 14,
     bookTitleBare: "Hell Of A Book",
-    status: "Wishlist",
+    status: "Favorite",
     avgRating: 5,
     numPages: 250,
     imageUrl:
@@ -274,7 +274,7 @@ export const mockBookList = [
   {
     bookId: 15,
     bookTitleBare: "Hell Of A Book",
-    status: "Wishlist",
+    status: "Favorite",
     avgRating: 5,
     numPages: 250,
     imageUrl:
@@ -293,7 +293,7 @@ export const mockBookList = [
   {
     bookId: 16,
     bookTitleBare: "Hell Of A Book",
-    status: "Wishlist",
+    status: "Favorite",
     avgRating: 5,
     numPages: 250,
     imageUrl:
@@ -312,7 +312,7 @@ export const mockBookList = [
   {
     bookId: 17,
     bookTitleBare: "Hell Of A Book",
-    status: "Wishlist",
+    status: "Favorite",
     avgRating: 5,
     numPages: 250,
     imageUrl:
@@ -331,7 +331,7 @@ export const mockBookList = [
   {
     bookId: 18,
     bookTitleBare: "Hell Of A Book",
-    status: "Wishlist",
+    status: "Favorite",
     avgRating: 5,
     numPages: 250,
     imageUrl:

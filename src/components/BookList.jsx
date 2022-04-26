@@ -1,13 +1,13 @@
-import React from 'react';
-import {
-  View, StyleSheet, FlatList, Pressable,
-} from 'react-native';
-import Animated, { useSharedValue, useAnimatedScrollHandler } from 'react-native-reanimated';
-import { useTheme, useNavigation } from '@react-navigation/native';
-import { AntDesign } from '@expo/vector-icons';
-
-import Text from './Text';
-import Book from './Book';
+import { AntDesign } from "@expo/vector-icons";
+import { useNavigation, useTheme } from "@react-navigation/native";
+import React from "react";
+import { FlatList, Pressable, StyleSheet, View } from "react-native";
+import Animated, {
+  useAnimatedScrollHandler,
+  useSharedValue,
+} from "react-native-reanimated";
+import Book from "./Book";
+import Text from "./Text";
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 
@@ -26,28 +26,28 @@ function BookList({ books, title }) {
 
   // go to search screen
   const searchScreen = () => {
-    navigation.push('BookSearch');
+    navigation.push("BookSearch");
   };
 
   // all styles
   const styles = StyleSheet.create({
     list: {
       backgroundColor: colors.card,
-      paddingTop: (title === 'Reading' ? margin : 0),
+      paddingTop: margin,
     },
     heading: {
       paddingTop: margin,
       paddingHorizontal: margin,
-      flexDirection: 'row',
-      justifyContent: 'space-between',
+      flexDirection: "row",
+      justifyContent: "space-between",
     },
     listContainer: {
       padding: margin,
     },
     emptyContainer: {
       borderRadius: 20,
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: "center",
+      justifyContent: "center",
       width: width - margin * 2,
       paddingVertical: margin * 3,
       backgroundColor: colors.background,
@@ -62,7 +62,7 @@ function BookList({ books, title }) {
     <Pressable onPress={searchScreen} style={styles.emptyContainer}>
       <AntDesign color={colors.text} size={27} name="book" />
       <Text size={16} center style={styles.emptyText}>
-        {'I\'m lonely. \n Add something here.'}
+        {"I'm lonely. \n Add something here."}
       </Text>
     </Pressable>
   );
@@ -71,7 +71,9 @@ function BookList({ books, title }) {
   return (
     <View style={styles.list}>
       <View style={styles.heading}>
-        <Text size={17} bold>{title}</Text>
+        <Text size={17} bold>
+          {title}
+        </Text>
         <Text size={17}>{books.length}</Text>
       </View>
       <AnimatedFlatList
