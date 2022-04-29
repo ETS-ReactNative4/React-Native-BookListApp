@@ -2,6 +2,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { useTheme } from "@react-navigation/native";
 import * as Haptics from "expo-haptics";
 import LottieView from "lottie-react-native";
+import { observer } from "mobx-react";
 import React from "react";
 import { Pressable, View } from "react-native";
 import Animated, {
@@ -13,9 +14,9 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import { SharedElement } from "react-navigation-shared-element";
-import { useBooksState } from "../BookStore";
 import BookList from "../components/BookList";
 import Text from "../components/Text";
+import { BookStore } from "../stores/BookStore";
 
 const studies = require("../anims/landscape.json");
 
@@ -34,12 +35,15 @@ const getGreeting = () => {
 };
 
 // home screen
-function BookListScreen({ navigation }) {
+export const BookListScreen = observer(({ navigation }) => {
   const { dark, width, colors, margin, navbar, normalize, ios } = useTheme();
   const HEADER = normalize(300, 400);
   const scrollY = useSharedValue(0);
   const loaded = useSharedValue(0);
-  const { books } = useBooksState();
+  // const { books } = useBooksState();
+
+  const bookStore = React.useMemo(() => new BookStore(), []);
+  const { books } = bookStore;
 
   // fade in screen, slowly if light mode is on
   const onLayout = () => {
@@ -241,6 +245,6 @@ function BookListScreen({ navigation }) {
       </Animated.ScrollView>
     </Animated.View>
   );
-}
+});
 
-export default React.memo(BookListScreen);
+// export default React.memo(BookListScreen);

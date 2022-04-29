@@ -4,7 +4,7 @@ import { Platform, useWindowDimensions } from "react-native";
 /* Return the App Theme Object */
 export default function getTheme(scheme) {
   const { width, height } = useWindowDimensions();
-  const dark = "dark";
+  const dark = scheme === "dark";
   const normalize = (size, max) => Math.min(size * (width / 375), max);
 
   return {

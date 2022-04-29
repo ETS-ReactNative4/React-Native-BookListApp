@@ -1,10 +1,9 @@
-import React from 'react';
-import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
-
-import BooksScreen from './screens/BooksScreen';
-import BookListScreen from './screens/BookListScreen';
-import BookDetailsScreen from './screens/BookDetailsScreen';
-import BookSearchScreen from './screens/BookSearchScreen';
+import React from "react";
+import { createSharedElementStackNavigator } from "react-navigation-shared-element";
+import BookDetailsScreen from "./screens/BookDetailsScreen";
+import { BookListScreen } from "./screens/BookListScreen";
+import BookSearchScreen from "./screens/BookSearchScreen";
+import BooksScreen from "./screens/BooksScreen";
 
 // Root Stack of App
 function RootNavigator() {
@@ -17,7 +16,7 @@ function RootNavigator() {
   });
 
   const bookTransition = {
-    animation: 'spring',
+    animation: "spring",
     config: {
       mass: 3,
       damping: 300,
@@ -29,7 +28,7 @@ function RootNavigator() {
   };
 
   const searchTranstion = {
-    animation: 'spring',
+    animation: "spring",
     config: {
       mass: 3,
       damping: 300,
@@ -46,7 +45,7 @@ function RootNavigator() {
       screenOptions={{
         headerShown: false,
         cardOverlayEnabled: true,
-        cardStyle: { backgroundColor: 'transparent' },
+        cardStyle: { backgroundColor: "transparent" },
       }}
       detachInactiveScreens={false}
     >
@@ -56,7 +55,7 @@ function RootNavigator() {
         name="BookDetails"
         component={BookDetailsScreen}
         sharedElements={(route, otherRoute) => {
-          if (['BookList', 'BookSearch'].includes(otherRoute.name)) {
+          if (["BookList", "BookSearch"].includes(otherRoute.name)) {
             return [route.params.book.bookId];
           }
           return [];
@@ -73,12 +72,18 @@ function RootNavigator() {
       <BookStack.Screen
         name="BookSearch"
         component={BookSearchScreen}
-        sharedElements={(_, otherRoute) => (otherRoute.name === 'BookList' ? [{
-          id: 'search',
-          animation: 'fade',
-          resize: 'clip',
-          align: 'left-top',
-        }] : [])}
+        sharedElements={(_, otherRoute) =>
+          otherRoute.name === "BookList"
+            ? [
+                {
+                  id: "search",
+                  animation: "fade",
+                  resize: "clip",
+                  align: "left-top",
+                },
+              ]
+            : []
+        }
         options={{
           cardStyleInterpolator: fadeScreen,
           transitionSpec: {

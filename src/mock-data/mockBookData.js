@@ -11,7 +11,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -30,7 +30,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -49,7 +49,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -68,7 +68,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -87,7 +87,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -107,7 +107,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -127,7 +127,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -147,7 +147,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -157,7 +157,7 @@ export const mockBookList = [
   {
     bookId: 9,
     bookTitleBare: "Hell Of A Book",
-    status: "Completed",
+    status: "Recommended",
     avgRating: 4,
     numPages: 250,
     imageUrl:
@@ -167,7 +167,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -187,7 +187,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -207,7 +207,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -226,7 +226,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -245,7 +245,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -264,7 +264,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -283,7 +283,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -302,7 +302,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -321,7 +321,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:
@@ -340,7 +340,7 @@ export const mockBookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: {
       id: 1,
-      name: "Mesut Çağa",
+      name: "John Doe",
       image_url:
         "https://image.shutterstock.com/image-photo/confident-intelligence-grey-hair-senior-260nw-261010109.jpg",
       about:

@@ -1,13 +1,11 @@
-import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { useColorScheme } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-
-import getTheme from './src/theme';
-import RootNavigator from './src/RootNavigator';
-
-import ToastContainer from './src/components/Toast';
-import StatusModal from './src/components/StatusModal';
+import { NavigationContainer } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { useColorScheme } from "react-native";
+import StatusModal from "./src/components/StatusModal";
+import ToastContainer from "./src/components/Toast";
+import RootNavigator from "./src/RootNavigator";
+import getTheme from "./src/theme";
 
 export default function App() {
   const scheme = useColorScheme();
